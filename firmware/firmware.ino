@@ -58,7 +58,6 @@ void setup() {
   
     #ifdef DEBUG
     Serial.begin(BAUD_RATE);
-    while (!Serial);
 
     Serial.println(" ");
     Serial.println(" ");
@@ -164,7 +163,7 @@ void loop() {
         }
     }
 
-    if (heating_devices > (TOTAL_DEVICES / 2)) {
+    if (heating_devices > 0) { //(TOTAL_DEVICES / 2)) {
         digitalWrite(LED, HIGH);
 
         #ifdef DEBUG
