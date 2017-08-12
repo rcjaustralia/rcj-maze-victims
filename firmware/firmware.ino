@@ -34,10 +34,10 @@
 #define ON HIGH
 
 /* The pins used for temperature sensors, in order of device */
-byte TEMP_PINS[TOTAL_DEVICES] = {A0, A1, A2, A3, A4, A5};
+byte TEMP_PINS[TOTAL_DEVICES] = {A7, A6, A5, A4, A3, A2};
 
 /* The digital pins used to control the devices, in order of device */
-byte CONTROL_PINS[TOTAL_DEVICES] = {5, 6, 7, 8, 9, 10};
+byte CONTROL_PINS[TOTAL_DEVICES] = {2, 3, 4, 5, 6, 7};
 
 /*** END CONFIG ***/
 
